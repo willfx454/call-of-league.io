@@ -1,0 +1,105 @@
+/* Applique un fond d'écran à la page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Police élégante et moderne */
+    background-image: url('u4nqgmfuvdrnfpyk6crgqp-1572003351.avif'); /* Remplace par le lien vers ton image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px); /* Flou d'arrière-plan */
+    animation: fadeIn 1.5s ease-in-out; /* Animation fade-in */
+  }
+  
+  /* Animation pour faire apparaître la page */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Titre de la page */
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Jaune néon pour l'effet lumineux */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Paragraphe de confirmation */
+  p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Lien pour rejoindre le groupe WhatsApp */
+  .whatsapp-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #2ecc71, #27ae60); /* Dégradé vert */
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px rgba(39, 174, 96, 0.8); /* Ombre lumineuse */
+    transition: all 0.3s ease;
+  }
+  
+  .whatsapp-link:hover {
+    background: linear-gradient(45deg, #27ae60, #2ecc71); /* Changement de dégradé au survol */
+    box-shadow: 0 0 25px rgba(39, 174, 96, 1);
+    transform: scale(1.1); /* Effet de zoom */
+  }
+  
+  .whatsapp-link:active {
+    background: #27ae60; /* Couleur uniforme lors du clic */
+    box-shadow: 0 0 15px rgba(39, 174, 96, 0.6);
+    transform: scale(1); /* Rétablir à la taille d'origine */
+  }
+  
+  /* Responsivité pour les petits écrans */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .whatsapp-link {
+      font-size: 18px;
+      padding: 12px 25px;
+    }
+  }
+  
